@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>progress form</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
+  </head>
+  <body>
+    <div class="container-fluid mt-4">
+    <form>
+      <h3 class="container text-center py-2 text-black">WELCOME TO STACK SUMMATION</h3>
+      <div class="container-fluid">
+      <div class="form_area">
+        <!-- progress bar -->
+        <div class="progress_bar pt-5 container">
+          <div class="progress" style="height:2px;width:95%;margin: 0px auto; background-color: #e3e3e3;">
+            <div id="pr" class="progress-bar p-0"role="progressbar"style="width: 0%"aria-valuenow="25"aria-valuemin="0"aria-valuemax="100">
+            </div>
+          </div>
+          <div class="progress_stages">
+            <ul class="d-flex justify-content-between p-0">
+              <li id='l1' class="active">Personal Info</li>
+              <li id="l2">Job Status</li>
+              <li id="l3">Interview</li>
+              <li id="l4">Remark</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div id="f_1">
+      <fieldset class="row mx-0">
+        <div class="col-xl-6">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname">
+        </div>
+        <div class="col-xl-6">
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname">
+        </div>
+        <div class="col-xl-6">
+          <label for="lname">Email Address:</label><br>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="col-xl-6">
+          <label for="lname">Phone Number:</label><br>
+          <input type="text" id="fno" name="fno">
+        </div>
+        <div class="col-xl-6">
+          <label for="lname">Select City:</label><br>
+          <select name="city" id="city">
+            <option value="">Select City</option>
+            <option value="ahmedabad">Ahmedabad</option>
+            <option value="surat">Surat</option>
+          </select>
+        </div>
+        <div class="col-xl-6">
+          <label for="lname">Date of Birth:</label><br>
+          <input type="date" id="bdate" name="bdate">
+        </div>
+        <div class="col-xl-12 d-flex justify-content-end">
+          <a class="form_button2 my-4">Previous</a>
+        <a  onclick="next_form(1,0)" class="form_button1 my-4">Next</a>
+        </div>
+      </fieldset>
+    </div>
+    <div id="f_2">
+      <fieldset class="row mx-0">
+        <div class="col-xl-6">
+          <label for="fname">Job Title:</label><br>
+          <input type="text" id="jtitle" name="jtitle">
+        </div>
+        <div class="col-xl-6">
+          <label for="lname">Company Name:</label><br>
+          <input type="text" id="cname" name="cname">
+        </div>
+        <div class="col-xl-12">
+          <label for="lname">Email Address:</label><br>
+          <textarea id="w3review" name="w3review" rows="4">
+          </textarea>
+        </div>
+        <div class="col-xl-12 d-flex justify-content-end">
+        <a  onclick="pre_form(2,33)" class="form_button2 my-4">Previous</a>
+        <a  onclick="next_form(2,33)" class="form_button1 my-4">Next</a>
+      </div>
+      </fieldset>
+    </div>
+    <div id="f_3">
+      <fieldset class="row mx-0">
+        <div class="col-xl-6">
+          <label for="fname">Interview For:</label><br>
+          <input type="text" id="ifor" name="ifor">
+        </div>
+        <div class="col-xl-6">
+          <label for="lname">Interview Date:</label><br>
+          <input type="date" id="idate" name="idate">
+        </div>
+        <div class="col-xl-6">
+          <label for="lname">Interview Type:</label><br>
+          <select name="itype" id="itype">
+            <option value="">normal</option>
+            <option value="ahmedabad">complecated</option>
+            <option value="surat">other</option>
+          </select>
+        </div>
+        <div class="col-xl-6">
+          <label for="lname">Requirement:</label><br>
+          <input type="checkbox" id="employee" name="employee">Emplo
+          <input type="checkbox" id="contract" name="contract">
+        </div>
+        <div class="col-xl-6">
+          <label for="lname">Select City:</label><br>
+          <select name="city" id="city">
+            <option value="">Select City</option>
+            <option value="ahmedabad">Ahmedabad</option>
+            <option value="surat">Surat</option>
+          </select>
+        </div>
+        <div class="col-xl-6">
+          <label for="lname">Date of Birth:</label><br>
+          <input type="date" id="bdate" name="bdate">
+        </div>
+        <div class="col-xl-12 d-flex justify-content-end">
+        <a  onclick="pre_form(3,66)" class="form_button2 my-4">Previous</a>
+        <a  onclick="next_form(3,66)" class="form_button1 my-4">Next</a>
+      </div>
+      </fieldset>
+    </div>
+    <div id="f_4">
+      <fieldset class="row mx-0">
+        <div class="col-xl-6">
+          <label for="fname">4irst name:</label><br>
+          <input type="text" id="fname" name="fname">
+        </div>
+        <div class="col-xl-6">
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname">
+        </div>
+        <div class="col-xl-6">
+          <label for="lname">Email Address:</label><br>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="col-xl-6">
+          <label for="lname">Phone Number:</label><br>
+          <input type="text" id="fno" name="fno">
+        </div>
+        <div class="col-xl-6">
+          <label for="lname">Select City:</label><br>
+          <select name="city" id="city">
+            <option value="">Select City</option>
+            <option value="ahmedabad">Ahmedabad</option>
+            <option value="surat">Surat</option>
+          </select>
+        </div>
+        <div class="col-xl-6">
+          <label for="lname">Date of Birth:</label><br>
+          <input type="date" id="bdate" name="bdate">
+        </div>
+        <div class="col-xl-12 d-flex justify-content-end">
+        <a  onclick="pre_form(4,100)" class="form_button2 my-4">Previous</a>
+        <a  onclick="next_form(4,66)" class="form_button1 my-4">Submit</a>
+      </div>
+      </fieldset>
+    </div>
+    </form>
+  </div>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+    
+   
+  </body>
+</html>
