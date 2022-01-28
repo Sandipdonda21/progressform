@@ -7,7 +7,7 @@
 
 
 body{
-    background-image: linear-gradient(to bottom right , red ,yellow);
+    background-image: linear-gradient(to bottom right , rgb(255, 1, 213) ,rgb(0, 90, 224));
     height: 100vh;
 }
 form{
@@ -89,6 +89,14 @@ form fieldset .form_button1{
     margin-right: 10px;
     text-decoration: none;
     cursor: pointer;
+}
+#employee ,#rating{
+    width: unset;
+}
+span{
+    font-family: nunito;
+    color: #8b8383;
+    font-size: 15px;
 }
 form fieldset .form_button2{
     font-size: 18px;
